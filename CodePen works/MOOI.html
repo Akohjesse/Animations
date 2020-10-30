@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header id="header">
+  <div class="logo">
+  <img id="header-img" src="https://images.pexels.com/photos/1337380/pexels-photo-1337380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  </div>
+  <div class="Nav">
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#About-US" id="nav-link">About Us</a></li>
+        <li><a href="#Join-us" id="nav-link">Join Us</a></li>
+        <Li><a href="#Services" id="nav-link">Services</a></li>
+      </ul> 
+      </nav>
+  </div>
+</header>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-family: Lato, sans-serif;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+main{
+   max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header-img{
+  width:150px;
+  height:100px;
+  margin:10px;
+  border-radius:60%;
+}
+li{
+  display:inline;
+     padding: 0 50px;
+}
+header{
+  display:flex;
+   min-height: 75px;
+  padding: 0px 20px;
+  background:#F3E5F5;
+   justify-content: space-around;
+  align-items:center;
+}
+#h2{
+  padding-top:60px;
+  text-align:center;
+}
+.form{
+  text-align:center;
+  padding:20px 0;
+}
+@media (max-width:600px){
+  #form input[type="email"]{
+    width:auto;
+    height:30px;
+  }
+  #form input[type="submit"]{
+    width:50%;
+    font-size:0.8em;
+  }
+  
+  
+}
+#email{
+  margin:6px 0;
+  width:40%;
+  height:30px;
+  padding:0 10px;
+}
+#submit{
+  width:30%;
+  height:40px;
+  font-size:1.2em;
+  background:#F06292;
+  color:white;
+  border-radius:20px;
+}
+.stock{
+ width:400px;
+  border-radius:;
+  
+
+}
+#About-US{
+justify-content:center;
+  text-align:center;
+  padding:40px;
+}
+#Join-us{
+  text-align:center;
+  padding:40px;
+}
+p{
+  font-size:0.9em;
+  padding-top:8px;
+}
+.services-photo{
+  width:300px;
+  height:400px;  
+}
+.services{
+  margin:0 10px;
+  border:2px solid pink;
+  text-align:center;
+}
+#services {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h2{
+  text-align:center;
+}
+.service-btn{
+  margin:10px;
+  background:#FFB300;
+  color:black;
+  width:50%;
+  height:30px;
+  border-radius:20px;
+  
+}
+footer{
+ text-align:center;
+  justify-content:space-around;
+ margin-top:60px;
+  background:#BDBDBD;
+}
+footer > p{
+  padding:20px;
+}
+footer > ul{
+  padding-top:20px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top:10px;
+    width:100%;
+    display:inline;
+    text-align: center;
+  
+  }
+}
+  @media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+ 
+  }
+}
+@media (max-width: 650px) {
+  .form {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 800px) {
+  #services {
+    flex-direction: column;
+  }
+  .services {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width:550px){
+  video{
+    width:100%;
+  }
+  .stock{
+    width:100%;
+  }
+}
+</style>
+
+<main class="content">
+
+  <h2 id="h2">Lets Show the beauty of the world</h2>
+    
+  <div class="form">
+      <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        
+        <input name="email" id="email" type="email" validation placeholder="Enter your Email address" >
+     <br>
+      <input name="email" type="submit" id="submit" value="Begin your Journey with us">
+      </form>
+  </div>      
+      <section id="About-US">
+        <img class="stock" src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+        
+      </section>
+      
+      <section id="Join-us">
+        <video id="video" controls autoplay loop   src="https://player.vimeo.com/external/332871723.sd.mp4?s=b5508f4bb0d446e1a25cb53a3364be565b657237&profile_id=139&oauth2_token_id=57447761"></video>
+        <P>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</>
+      </section>
+      <section id="Services">
+        <div class="services 1">
+          <img  src="https://images.unsplash.com/photo-1575221164314-ca242dfef3bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="A man taking a picture" class="services-photo">
+          <h2>Photography</h2>
+          <button class="service-btn">See More</button>
+        </div>
+        
+        <div class="services 2">
+          <img src="https://images.unsplash.com/photo-1551913902-c92207136625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a painting" class="services-photo">
+          <h2>Art</h2>
+           <button class="service-btn">Learn More</button>
+        </div>
+        
+        <div class="services 3">
+          <img src="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="services-photo" alt="a beautiful scenery">
+          <h2>Scenery</h2> 
+           <button class="service-btn">Enjoy more scenes</button>
+        </div>
+      </section>
+         
+    </div>
+</main>
+   <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>Copyright 2016,  MOOI.inc</p>
+    </footer>
+    
+</body>
+</html>

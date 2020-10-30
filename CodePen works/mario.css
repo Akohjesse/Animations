@@ -1,0 +1,100 @@
+body, html{
+    background:white;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+  }
+  .sky{
+    background:skyblue;
+    height:40%;
+     position:relative;
+  }
+  .grass{
+    background:green;
+      height:20%;
+    position:relative;
+  }
+  .road{
+   background:#37474F;
+      height:36%;
+    position:relative;
+    border-top: 10px solid grey;
+    border-bottom:10px solid grey;
+    width:100%;
+  }
+  .lines{
+    position:absolute;
+    top:45%;
+    width:100%;
+    border:5px dashed white;
+  }
+  .mario{
+    position:absolute;
+    top:-40px;
+    left:0;
+    width:100px;
+    animation:drive 3s linear infinite,
+              Jump 0.3s 1.2s ease;
+  }
+  @keyframes drive{
+    from{ transform:translateX(-200px)}
+    to{transform:translateX(1700px)}
+  }
+  .luigi{
+    position:absolute;
+    top:120px;
+    left:0;
+    width:100px;
+    animation-name:ride;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-fill-mode:both;
+    animation-direction:normal;
+    animation-timing-function:linear;
+  }
+  @keyframes ride{
+    from{transform:translateX(-200px)}
+    to{transform:translateX(1500px)}
+  }
+  .cloud:nth-child(1){
+    opacity:0.5;
+    width:200px;
+    animation-duration:40s;
+    animation-name:wind;
+    animation-timing-function:linear;
+    animation-iteration-count:infinte;
+  }
+  .cloud:nth-child(2){
+    animation:wind 40s linear infinite alternate-reverse;
+    
+  }
+  .cloud:nth-child(3){
+    opacity:0.6;
+    width:250px;
+    position:absolute;
+    left:800px;
+    top:200px;
+    animation:wind 30s linear infinite reverse;
+  }
+    
+  .cloud:nth-child(4){
+    opacity:0.2;
+    width:100Px;
+    transform:rotateZ(30px);
+    animation-name:wind;
+      animation-duration:30s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+  }
+  @keyframes wind{
+    from{transform:translateX(-100px)}
+    to{transform:translateX(100%)}
+  }
+  /* chaining animations, and using percentes */
+  @keyframes Jump{
+    0%{top:-40px}
+    50%{top:-100px}
+    100%{top:-40px}
+  }

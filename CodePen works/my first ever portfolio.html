@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    *{
+  margin:0;
+  padding:0;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html{
+    scroll-behavior: smooth;
+}
+#nav-bar{
+  background-color:#292c35;
+}
+nav{
+    display: flex;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  justify-content: flex-end;
+  position: fixed;
+   top: 0;
+  left: 0;
+  width: 100%;
+  height:80px;
+}
+ul{
+  list-style:none;
+  display:flex;
+  justify-content:space-around;
+}
+li{
+padding:40px;
+  font-size:1.3em;
+  
+}
+li >a{
+  text-decoration:none;
+}
+#nav-bar a:hover{
+  color:green;
+}
+#nav-bar a{
+  color:white;
+}
+#welcome-section{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top:40px;
+  margin-top:80px;
+  background-image:url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+} 
+h1{
+   font-size: 5em;
+  color:white;
+  padding:20px;
+  
+}
+#welcome-section > p {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  color:red;
+  padding-bottom:30px;
+}
+#projects{
+  text-align:center;
+  padding:30px 40px;
+  background-image:url(https://images.pexels.com/photos/776607/pexels-photo-776607.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+h2{
+  text-align:center;
+  color:white;
+  font-size:2em;
+  border-bottom: 3px white solid;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;;
+}
+.project-image{
+  width:300px;
+  
+}
+.checkm{
+ padding:30px;
+  background:linear-gradient(pink,#B2EBF2 );
+    width:400px;
+ margin:20px;
+ margin-left:400px;
+  border-radius:15px;
+}
+.projects-tile{
+  text-decoration:none;
+  color:#424242;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+ 
+}
+footer{
+  background:#263238;
+}
+#contact{
+  background:#966945;}
+h3{
+  text-align:center;
+  color:black;
+  padding:20px;
+  font-size:2em;
+}
+#contact p{
+  text-align:center;
+  color:black;
+  
+  font-size:1.3em;
+  font-family:'Tempus sans Itc';
+}
+.contact-links{
+  display:flex;
+  justify-content: center;
+  max-width: 900x;
+  margin-top: 4rem;
+  text-decoration:none;
+
+}
+.contactbtn{
+    font-size: 1.5em;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;;
+ 
+  transition: transform 0.3s ease-out;
+   text-decoration:none;
+  padding:0 20px;
+  margin:0 20px;
+  background:lavender;
+  border-radius:19px;
+  color:black;
+  margin-bottom:30px;
+}
+.contactbtn:hover{
+  background:#212121;
+  color:lightyellow;
+}
+footer{
+  background:#9E9E9E;
+  text-align:center;
+ 
+}
+footer> p{
+  padding:20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;;
+}
+@media (max-width:800px){
+  nav{
+    height:60px;
+  }
+  li{
+    margin-top:20px;
+padding:10px;
+    padding-bottom:10px;
+  font-size:1em; 
+}
+.projects-grid{
+    display:flex;
+}
+  #nav-bar{
+  background-color:#292c35;
+  }
+  #welcome-section{
+    margin-top:60px;
+  }
+  h1{
+    font-size:1.5em;
+  }
+  #welcome-section p{
+    font-size:1.2em;
+  }
+  h2{
+    font-size:1.2em;
+  }
+  .checkm{
+    padding:30px;
+    width:200px;
+    height:auto;
+ margin:10px;
+ 
+  border-radius:15px;
+  }
+  .project-image{
+    width:200px;
+  }
+  .project-title{
+    font-size:1em;
+  }
+  .contactbtn{
+    font-size:0.9em;
+     text-decoration:none;
+  margin:5px;
+  background:lavender;
+  border-radius:19px;
+  color:black;
+    padding:0 5px;
+ 
+  }
+}
+</style>
+<body>
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+
+<header>
+<nav id="nav-bar">
+  <ul id="nav-list">
+    <li><a href="welcome-section">About</a></li>
+    <li><a href="projects" >Work</a></li>
+    <li><a href="contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<section id="welcome-section">
+  <h1>Hey, I am Jesse</h1>
+  <p>I am a Web Developer
+  </p>
+</section>
+
+<!-- projects section -->
+
+<section id="projects">
+  <h2>Here are some of my Projects</h2>
+  
+  <div class="projects-grid">
+    <div class="checkm">
+    <a class="projects-tile" href="https://codepen.io/jessefervz/pen/LYGMxjw">
+      <img class="project-image" src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="image of a webite">
+      <h3 class="project-title">MOOI.inc Website<h3>
+    </a>
+        </div>
+      <div class="checkm">
+        <a class="projects-tile" href="https://codepen.io/jessefervz/pen/KKVGBor" target="_blank">
+          <img class="project-image" src="https://i.pinimg.com/236x/cb/e7/50/cbe750dde099f5a13cccb3aa375804e8.jpg" alt="penguin png">
+          <h3 class="project-title">Penguin art with CSS</h3>
+        </a>
+      </div>
+      <div class="checkm">
+        <a class="projects-tile" href="https://codepen.io/jessefervz/pen/bGEaKyE" target="_blank">
+          <img src="https://i.pinimg.com/236x/7f/ad/c7/7fadc72a3ec98f31ee9b8293f03f8279.jpg" class="project-image" alt="CSS animation" >
+          <h3 class="project-title">CSS spiral animation with Color Gradient</h3>
+        </a>
+      </div>
+      <div class="checkm">
+        <a href="https://codepen.io/jessefervz/pen/PoZxWLE" target="_blank" class="projects-tile">
+          <img src="https://i.pinimg.com/236x/71/0d/3d/710d3df49672dcb59d0337b859b1d28c.jpg" class="project-image" alt="An image of Pierre Simon Laplace">
+          <h3 class="project-title">A Tribute to Pierre-Simon Laplace</h3>
+        </a>
+      </div>
+  </div>
+</section>
+    
+<section id="contact"  class="contact-section">
+  <div class="contact-section-header">
+    <h3>Let's work together...</h3>
+    <p>Hope you like Jazz?</p>
+  </h>
+  <div class="contact-links">
+    <a href="twitter.com/jessefervz"
+          target="_blank"
+       class="contactbtn"><i class="fab fa-twitter"></i> Twitter</a>
+     <a href="https://github.com/Akohjesse"
+     id="profile-link"
+     target="_blank"
+     class="contactbtn"><i class="fab fa-github"></i>GitHub</a>
+  
+     <a href="mailto:akohgodwinjesse@gmail.com" class="contactbtn"><i class="fas fa-at"></i>Send a mail</a>
+  <a href="tel:07087517023" class="contactbtn"><i class="fas fa-mobile-alt"></i>Call Me</a>
+  </div>
+  </section>
+  
+  <footer>
+    <P>Well this what my portfolio would look like when its ready <br> &copy;Created by Jesse </P>  
+   
+  </footer>
+</body>
+</html>
